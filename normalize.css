@@ -349,3 +349,8 @@ template {
 [hidden] {
   display: none;
 }
+
+.tab-image {
+  display: flex;
+  align-items: center;
+}
