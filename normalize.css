@@ -389,3 +389,26 @@ template {
 .sidebar_menu {
   background-color: #e7dbbb;
 }
+
+
+.navbar-about {
+  background-color: #e7dbbb;
+}
+
+.navbar-item {
+  position: sticky;
+}
+
+.carddemo {
+  width: 300px;
+  border-radius: 0.5rem;
+  padding: 0.6rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* e7dbbb */
