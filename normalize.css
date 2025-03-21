@@ -22,6 +22,7 @@ html {
 
 body {
   margin: 0;
+  background-color: #fcf4e8;
 }
 
 /**
@@ -353,4 +354,34 @@ template {
 .tab-image {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+
+
+.serch-holder {
+  border: 0.1rem solid #BDB395;
+}
+
+.serch-holder2 {
+  background-color: #D5C7A3;
+}
+
+
+.navbar-about {
+ padding-top: 5px;
+}
+
+.nav-item:hover, .dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.form-select option:hover, .form-select:focus option:checked {
+  background-color: #BDB395 !important;
+  color: white !important;
+}
+
+.head1 {
+  margin-top: -0;
+  padding-top: 0;
 }

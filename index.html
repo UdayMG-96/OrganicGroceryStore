@@ -11,11 +11,15 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
 
+    <link rel="icon" href="./image/logoCrop2.png">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/vendor.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -258,7 +262,7 @@
 
     </div>
 
-    <header>
+    <header class="head2">
       <div class="container-fluid">
         <div class="row py-3 border-bottom">
           
@@ -274,51 +278,60 @@
             </button>
           </div>
           
-          <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-4">
-            <div class="search-bar row bg-light p-2 rounded-4">
+          <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-4 ">
+            <div class="search-bar row p-2 rounded-4 serch-holder" style="background-color: #D5C7A3; border-radius: 10px;">
               <div class="col-md-4 d-none d-md-block">
-                <select class="form-select border-0 bg-transparent">
-                  <option>All Categories</option>
-                  <option>Groceries</option>
-                  <option>Drinks</option>
-                  <option>Chocolates</option>
+                <select class="form-select border-0 bg-transparent" style="background-color: #D5C7A3; border-radius: 10px; transition: background 0.3s;">
+                  <option style="border-radius: 10px;">All Categories</option>
+                  <option style="border-radius: 10px;">Groceries</option>
+                  <option style="border-radius: 10px;">Drinks</option>
+                  <option style="border-radius: 10px;">Chocolates</option>
                 </select>
               </div>
               <div class="col-11 col-md-7">
                 <form id="search-form" class="text-center" action="index.html" method="post">
-                  <input type="text" class="form-control border-0 bg-transparent" placeholder="Search for more than 20,000 products">
+                  <input type="text" class="form-control border-0 bg-transparent" placeholder="Search for more than 20,000 products" style="background-color: #D5C7A3; border-radius: 10px;">
                 </form>
               </div>
               <div class="col-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z"/>
+                </svg>
               </div>
             </div>
           </div>
+          
+        
 
-          <div class="col-lg-4">
-            <ul class="navbar-nav list-unstyled d-flex flex-row gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center mb-0 fw-bold text-uppercase text-dark">
-              <li class="nav-item active">
-                <a href="index.html" class="nav-link">Home</a>
+          <div class="col-lg-4 navbar-about">
+            <ul class="navbar-nav list-unstyled d-flex flex-row gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center mb-0 fw-bold text-uppercase text-dark" style="background-color: #D5C7A3; border-radius: 8px;">
+              <li class="nav-item active" style="border-radius: 8px; transition: background 0.3s;">
+                <a href="index.html" class="nav-link" style="border-radius: 8px;">Home</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-                <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pages">
-                  <li><a href="index.html" class="dropdown-item">About Us </a></li>
-                  <li><a href="index.html" class="dropdown-item">Shop </a></li>
-                  <li><a href="index.html" class="dropdown-item">Single Product </a></li>
-                  <li><a href="index.html" class="dropdown-item">Cart </a></li>
-                  <li><a href="index.html" class="dropdown-item">Checkout </a></li>
-                  <li><a href="index.html" class="dropdown-item">Blog </a></li>
-                  <li><a href="index.html" class="dropdown-item">Single Post </a></li>
-                  <li><a href="index.html" class="dropdown-item">Styles </a></li>
-                  <li><a href="index.html" class="dropdown-item">Contact </a></li>
-                  <li><a href="index.html" class="dropdown-item">Thank You </a></li>
-                  <li><a href="index.html" class="dropdown-item">My Account </a></li>
-                  <li><a href="index.html" class="dropdown-item">404 Error </a></li>
+              <li class="nav-item dropdown" style="border-radius: 8px; transition: background 0.3s;">
+                <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 8px;">Pages</a>
+                <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pages" style="border-radius: 8px;">
+                  <li><a href="index.html" class="dropdown-item" style="border-radius: 8px;">About Us </a></li>
+                  <li><a href="index.html" class="dropdown-item" style="border-radius: 8px;">Shop </a></li>
+                  <li><a href="index.html" class="dropdown-item" style="border-radius: 8px;">Single Product </a></li>
+                  <li><a href="index.html" class="dropdown-item" style="border-radius: 8px;">Cart </a></li>
+                  <li><a href="index.html" class="dropdown-item" style="border-radius: 8px;">Checkout </a></li>
+                  <li><a href="index.html" class="dropdown-item" style="border-radius: 8px;">Blog </a></li>
+                  <li><a href="index.html" class="dropdown-item" style="border-radius: 8px;">Single Post </a></li>
+                  <li><a href="index.html" class="dropdown-item" style="border-radius: 8px;">Styles </a></li>
+                  <li><a href="index.html" class="dropdown-item" style="border-radius: 8px;">Contact </a></li>
+                  <li><a href="index.html" class="dropdown-item" style="border-radius: 8px;">Thank You </a></li>
+                  <li><a href="index.html" class="dropdown-item" style="border-radius: 8px;">My Account </a></li>
+                  <li><a href="index.html" class="dropdown-item" style="border-radius: 8px;">404 Error </a></li>
                 </ul>
+              </li>
+              <li class="nav-item active" style="border-radius: 8px; transition: background 0.3s;">
+                <a href="index.html" class="nav-link" style="border-radius: 8px;">Diseases & Diet</a>
               </li>
             </ul>
           </div>
+
+        
           
           <div class="col-sm-8 col-lg-2 d-flex gap-5 align-items-center justify-content-center justify-content-sm-end">
             <ul class="d-flex justify-content-end list-unstyled m-0">
@@ -344,89 +357,47 @@
       </div>
     </header>
     
-    <section style="background-image: url('images/banner-1.jpg');background-repeat: no-repeat;background-size: cover;">
+    <section style="background-image: url('images/banner-1.jpg'); background-repeat: no-repeat; background-size: cover; padding: 80px 0;" class="head1">
       <div class="container-lg">
-        <div class="row">
-          <div class="col-lg-6 pt-5 mt-5">
-            <h2 class="display-1 ls-1"><span class="fw-bold text-primary">Organic</span> Foods at your <span class="fw-bold">Doorsteps</span></h2>
-            <p class="fs-4">Dignissim massa diam elementum.</p>
+        <div class="row ">
+          <div class="col-lg-6 pt-5 mt-5 ">
+            <h2 class="display-1 fw-bold text-primary" style="font-family: 'Poppins', sans-serif; letter-spacing: 1px;">
+              Organic Foods at your <span class="text-dark">Doorsteps</span>
+            </h2>
+            <p class="fs-4 text-dark" style="font-family: 'Roboto', sans-serif;">Dignissim massa diam elementum.</p>
             <div class="d-flex gap-3">
-              <a href="#" class="btn btn-primary text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Start Shopping</a>
-              <a href="#" class="btn btn-dark text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Join Now</a>
-            </div>
-            <div class="row my-5">
-              <div class="col">
-                <div class="row text-dark">
-                  <div class="col-auto"><p class="fs-1 fw-bold lh-sm mb-0">14k+</p></div>
-                  <div class="col"><p class="text-uppercase lh-sm mb-0">Product Varieties</p></div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="row text-dark">
-                  <div class="col-auto"><p class="fs-1 fw-bold lh-sm mb-0">50k+</p></div>
-                  <div class="col"><p class="text-uppercase lh-sm mb-0">Happy Customers</p></div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="row text-dark">
-                  <div class="col-auto"><p class="fs-1 fw-bold lh-sm mb-0">10+</p></div>
-                  <div class="col"><p class="text-uppercase lh-sm mb-0">Store Locations</p></div>
-                </div>
-              </div>
+              <a href="#" class="btn btn-primary text-uppercase fs-6 rounded-pill px-5 py-3 mt-3 shadow-lg">Start Shopping</a>
+              <a href="#" class="btn btn-dark text-uppercase fs-6 rounded-pill px-5 py-3 mt-3 shadow-lg">Join Now</a>
             </div>
           </div>
         </div>
         
-        <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-3 g-0 justify-content-center">
-          <div class="col">
-            <div class="card border-0 bg-primary rounded-0 p-4 text-light">
-              <div class="row">
-                <div class="col-md-3 text-center">
-                  <svg width="60" height="60"><use xlink:href="#fresh"></use></svg>
-                </div>
-                <div class="col-md-9">
-                  <div class="card-body p-0">
-                    <h5 class="text-light">Fresh from farm</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
-                  </div>
-                </div>
-              </div>
+        <div class="row mt-5 text-center">
+          <div class="col-md-4">
+            <div class="card border-0 bg-primary text-light p-4 rounded" style="box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+              <svg width="60" height="60"><use xlink:href="#fresh"></use></svg>
+              <h5 class="mt-3">Fresh from farm</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
             </div>
           </div>
-          <div class="col">
-            <div class="card border-0 bg-secondary rounded-0 p-4 text-light">
-              <div class="row">
-                <div class="col-md-3 text-center">
-                  <svg width="60" height="60"><use xlink:href="#organic"></use></svg>
-                </div>
-                <div class="col-md-9">
-                  <div class="card-body p-0">
-                    <h5 class="text-light">100% Organic</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
-                  </div>
-                </div>
-              </div>
+          <div class="col-md-4">
+            <div class="card border-0 bg-secondary text-light p-4 rounded" style="box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+              <svg width="60" height="60"><use xlink:href="#organic"></use></svg>
+              <h5 class="mt-3">100% Organic</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
             </div>
           </div>
-          <div class="col">
-            <div class="card border-0 bg-danger rounded-0 p-4 text-light">
-              <div class="row">
-                <div class="col-md-3 text-center">
-                  <svg width="60" height="60"><use xlink:href="#delivery"></use></svg>
-                </div>
-                <div class="col-md-9">
-                  <div class="card-body p-0">
-                    <h5 class="text-light">Free delivery</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
-                  </div>
-                </div>
-              </div>
+          <div class="col-md-4">
+            <div class="card border-0 bg-danger text-light p-4 rounded" style="box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+              <svg width="60" height="60"><use xlink:href="#delivery"></use></svg>
+              <h5 class="mt-3">Free delivery</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
             </div>
           </div>
         </div>
-      
       </div>
     </section>
+    
 
     <section class="py-5 overflow-hidden">
       <div class="container-lg">
@@ -536,7 +507,7 @@
                 <div class="product-item">
                   <figure>
                     <a href="index.html" title="Product Title">
-                      <img src="image/Whole Wheat Sandwich Bread.png" alt="Product Thumbnail" class="d-flex flex-column text-center" height="180" width="255">
+                      <img src="image/Whole Wheat Sandwich Bread.png" alt="Product Thumbnail" class="tab-image" height="180" width="255">
                     </a>
                   </figure>
                   <div class="d-flex flex-column text-center">
