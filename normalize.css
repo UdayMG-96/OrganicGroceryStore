@@ -385,3 +385,7 @@ template {
   margin-top: -0;
   padding-top: 0;
 }
+
+.sidebar_menu {
+  background-color: #e7dbbb;
+}
