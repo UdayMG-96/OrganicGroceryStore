@@ -407,8 +407,17 @@ template {
   margin-top: 1rem;
 }
 
-.container-card {
+.card-container {
   display: flex;
   flex-wrap: wrap;
 }
+
+.hero-section {
+  background: url('./image/banner-1.png') no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* e7dbbb */

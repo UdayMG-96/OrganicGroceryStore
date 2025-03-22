@@ -13,6 +13,8 @@
 
   <link rel="icon" href="./image/logoCrop2.png">
 
+  <link rel="stylesheet" href="index2style.css">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -605,8 +607,10 @@
               <a href="index.html" class="nav-link" style="border-radius: 8px;">Home</a>
             </li>
             <li class="nav-item dropdown" style="border-radius: 8px; transition: background 0.3s;">
-              <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 8px;">Pages</a>
-              <ul class="dropdown-menu border-0 p-3 rounded-0 shadow navbar-about" aria-labelledby="pages" style="border-radius: 8px;">
+              <a class="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown"
+                aria-expanded="false" style="border-radius: 8px;">Pages</a>
+              <ul class="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pages"
+                style="border-radius: 8px;">
                 <li><a href="index.html" class="dropdown-item" style="border-radius: 8px;">About Us </a></li>
                 <li><a href="index.html" class="dropdown-item" style="border-radius: 8px;">Shop </a></li>
                 <li><a href="index.html" class="dropdown-item" style="border-radius: 8px;">Single Product </a></li>
@@ -631,25 +635,26 @@
         
         <div class="col-sm-8 col-lg-2 d-flex gap-4 align-items-center justify-content-center justify-content-sm-end">
           <ul class="d-flex justify-content-end list-unstyled m-0">
-            <li class="position-relative">
-              <a href="#" class="p-2 mx-2 text-dark" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 8px; transition: background 0.3s;">
-                <svg width="24" height="24"><use xlink:href="#user"></use></svg>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end shadow rounded-3 border-0" aria-labelledby="userDropdown" style="background-color: #D5C7A3;">
-                <li><a class="dropdown-item text-dark" href="#">Sign In</a></li>
-                <li><a class="dropdown-item text-dark" href="#">Register</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item text-dark" href="#">Logout</a></li>
-              </ul>
-            </li>
             <li>
-              <a href="#" class="p-2 mx-2 text-dark" style="border-radius: 8px; transition: background 0.3s;">
-                <svg width="24" height="24"><use xlink:href="#wishlist"></use></svg>
+              <a href="#" class="p-2 mx-1">
+                <svg width="24" height="24">
+                  <use xlink:href="#user"></use>
+                </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="p-2 mx-2 text-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart" style="border-radius: 8px; transition: background 0.3s;">
-                <svg width="24" height="24"><use xlink:href="#shopping-bag"></use></svg>
+              <a href="#" class="p-2 mx-1">
+                <svg width="24" height="24">
+                  <use xlink:href="#wishlist"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                aria-controls="offcanvasCart">
+                <svg width="24" height="24">
+                  <use xlink:href="#shopping-bag"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -714,6 +719,7 @@
     <div id="product-grid" class="row row-cols-1 row-cols-md-3 g-3" 
     style="overflow-y: auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; height: 90vh;"></div>
   </div>
+
 
   <footer class="py-5 text-light" style="background-color: #D5C7A3;">
     <div class="container-lg">
