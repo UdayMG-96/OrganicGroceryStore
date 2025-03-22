@@ -1,44 +1,502 @@
-<div class="col card">
-    <div class="card border-0 shadow-sm p-3" style="background-color: #F2E2B1; border-radius: 12px;">
-      <figure class="text-center">
-        <a href="index.html" title="Product Title">
-          <img src="image/Whole Wheat Sandwich Bread.png" alt="Product Thumbnail" class="img-fluid" style="height: 180px; width: 255px; border-radius: 8px;">
-        </a>
-      </figure>
-      <div class="card-body text-center">
-        <h3 class="fs-6 fw-bold text-dark">Whole Wheat Sandwich Bread</h3>
-        <div>
-          <span class="rating">
-            <svg width="18" height="18" class="text-warning"><use xlink:href="#star-full"></use></svg>
-            <svg width="18" height="18" class="text-warning"><use xlink:href="#star-full"></use></svg>
-            <svg width="18" height="18" class="text-warning"><use xlink:href="#star-full"></use></svg>
-            <svg width="18" height="18" class="text-warning"><use xlink:href="#star-full"></use></svg>
-            <svg width="18" height="18" class="text-warning"><use xlink:href="#star-half"></use></svg>
-          </span>
-          <span class="text-muted">(222)</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Food Mart</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fcf4e8;
+            color: #444;
+        }
+        .header {
+            background: url('./image/banner') center/cover no-repeat;
+            color: brown;
+            text-align: center;
+            padding: 60px 20px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #ff6600;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 10px;
+}
+
+.card {
+    background: white;
+    width: 32%;
+    min-height: 400px;
+    padding: 25px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #ff6600;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.testimonials, .blogs {
+  text-align: center;
+  }
+        
+  .contact-info {
+            background: #ff6600;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+        }
+        
+.contact-info a {
+            color: white;
+            text-decoration: underline;
+        }
+
+.footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+}
+
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F2E2B1; /* Light Organic Theme */
+    border-radius: 12px;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    color: #ff6600;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.quote {
+    font-size: 16px;
+    color: #333;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.testimonial-card h4 {
+    font-size: 18px;
+    color: #ff6600;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.blogs {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F2E2B1; /* Organic Theme */
+    border-radius: 12px;
+}
+
+.blogs h2 {
+    font-size: 32px;
+    color: #ff6600;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.blog-card {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.blog-card h3 {
+    font-size: 20px;
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff6600;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F2E2B1; /* Soft organic background */
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.contact-info h2 {
+    font-size: 30px;
+    color: #ff6600;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contact-card {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.contact-card a {
+    color: #ff6600;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* Social Buttons */
+.social-links {
+    margin-top: 15px;
+}
+
+.social-btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.fb { background: #3b5998; color: white; }
+.insta { background: #E4405F; color: white; }
+.twitter { background: #1DA1F2; color: white; }
+
+.social-btn:hover {
+    opacity: 0.8;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    color: #ff6600;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+}
+
+.content-box {
+    background: #F2E2B1; /* Soft organic color */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.why-choose {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.why-choose h3 {
+    font-size: 26px;
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.benefit-card {
+    background: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.benefit-card span {
+    font-size: 30px;
+}
+
+.benefit-card h4 {
+    color: #333;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.benefit-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<div class="header">About Us</div>
+<div class="container">
+    <div class="section">
+        <h2 class="section-title">✨ Who We Are</h2>
+        <p class="section-description">
+            Welcome to <strong>Food Mart</strong>, your trusted destination for <strong>fresh, organic, and high-quality groceries</strong>.  
+            We believe that <strong>healthy food is the foundation of a happy life</strong>, and our mission is to make <strong>nutritious and organic food accessible to everyone</strong>.  
+        </p>
+
+        <div class="content-box">
+            <p>
+                At <strong>Food Mart</strong>, we go beyond just selling groceries—we promote a <strong>sustainable and healthy lifestyle</strong> by bringing 
+                <strong>farm-fresh, preservative-free, and ethically sourced food</strong> straight to your doorstep.  
+                Whether you're looking for <strong>organic vegetables, dairy products, wholesome grains, or healthy snacks</strong>, we ensure that you get the <strong>best quality at affordable prices</strong>.  
+            </p>
         </div>
-        <div class="d-flex justify-content-center align-items-center gap-2 mt-2">
-          <del class="text-danger">₹2,000</del>
-          <span class="text-dark fw-semibold fs-5">₹1,500</span>
-          <span class="badge bg-danger text-white rounded-pill px-2">10% OFF</span>
+
+        <div class="why-choose">
+            <h3>🌟 Why Choose Food Mart?</h3>
+            <div class="benefits-container">
+                <div class="benefit-card">
+                    <span>🌿</span>
+                    <h4>100% Organic & Chemical-Free</h4>
+                    <p>We source directly from trusted farmers, ensuring zero preservatives or harmful chemicals.</p>
+                </div>
+                <div class="benefit-card">
+                    <span>🚚</span>
+                    <h4>Fast & Reliable Delivery</h4>
+                    <p>Your groceries are delivered fresh, straight from the farm to your home.</p>
+                </div>
+                <div class="benefit-card">
+                    <span>💰</span>
+                    <h4>Affordable & Transparent Pricing</h4>
+                    <p>We provide high-quality organic food at fair and competitive prices.</p>
+                </div>
+                <div class="benefit-card">
+                    <span>🌍</span>
+                    <h4>Sustainable & Eco-Friendly</h4>
+                    <p>We support local farmers and promote environmentally responsible farming practices.</p>
+                </div>
+                <div class="benefit-card">
+                    <span>🏆</span>
+                    <h4>Customer Satisfaction Guaranteed</h4>
+                    <p>We prioritize quality, freshness, and your well-being.</p>
+                </div>
+            </div>
         </div>
-        <div class="button-area p-3 pt-2">
-          <div class="row g-2">
-            <div class="col-3">
-              <input type="number" name="quantity" class="form-control text-center" value="1" min="1" style="border-radius: 8px;">
-            </div>
-            <div class="col-7">
-              <a href="#" class="btn btn-dark w-100 p-2 rounded-pill">
-                <svg width="18" height="18"><use xlink:href="#cart"></use></svg> Add to Cart
-              </a>
-            </div>
-            <div class="col-2">
-              <a href="#" class="btn btn-outline-dark rounded-pill p-2">
-                <svg width="18" height="18"><use xlink:href="#heart"></use></svg>
-              </a>
-            </div>
-          </div>
-        </div>
+    </div>
+</div>
+
+    
+    <div class="content">
+      <div class="card">
+          <img src="./image/OrganicBlog1.png" alt="Our Mission">
+          <h3>Our Mission</h3>
+          <p>We are dedicated to providing <strong>100% organic, chemical-free food</strong> to promote a <strong>healthy and sustainable lifestyle</strong>.</p>
+      </div>
+      <div class="card">
+          <img src="./image/OrganicBlog2.png" alt="Why Choose Us">
+          <h3>Why Choose Us?</h3>
+          <p>We bring you <strong>farm-fresh, sustainably sourced</strong>, and <strong>high-quality organic food</strong> at affordable prices, straight from local farmers.</p>
+      </div>
+      <div class="card">
+          <img src="./image/OrganicBlog3.jpg" alt="Our Products">
+          <h3>Our Products</h3>
+          <p>Explore our selection of <strong>organic vegetables, natural grains, fresh dairy, and healthy snacks</strong> for a better lifestyle.</p>
       </div>
     </div>
+  
+
+    <div class="testimonials section">
+      <h2>💬 What Our Customers Say</h2>
+      <div class="testimonial-container">
+          <div class="testimonial-card">
+              <p class="quote">"Food Mart's organic vegetables are the freshest I've ever had! Highly recommend!"</p>
+              <h4><strong>- Aarav Mehta</strong></h4>
+          </div>
+          <div class="testimonial-card">
+              <p class="quote">"Finally, an organic food store I can trust! Amazing quality and service."</p>
+              <h4><strong>- Riya Sharma</strong></h4>
+          </div>
+          <div class="testimonial-card">
+              <p class="quote">"I love the freshness and taste of Food Mart's products. My family enjoys every bite!"</p>
+              <h4><strong>- Vikram Patel</strong></h4>
+          </div>
+          <div class="testimonial-card">
+              <p class="quote">"Super fast delivery and excellent quality! The best organic store online!"</p>
+              <h4><strong>- Neha Kapoor</strong></h4>
+          </div>
+      </div>
   </div>
+  
+  
+
+  <div class="blogs section">
+    <h2>📝 Our Blogs & Insights</h2>
+    <div class="blog-container">
+        <div class="blog-card">
+            <h3>📌 The Benefits of Organic Eating</h3>
+            <p>Discover how organic food enhances your health and supports sustainability.</p>
+            <a href="#" class="read-more">Read More →</a>
+        </div>
+        <div class="blog-card">
+            <h3>🥑 Top 10 Superfoods for a Healthy Lifestyle</h3>
+            <p>Boost your diet with these powerful superfoods rich in nutrients.</p>
+            <a href="#" class="read-more">Read More →</a>
+        </div>
+        <div class="blog-card">
+            <h3>🌱 Sustainable Farming – The Future of Agriculture</h3>
+            <p>Learn about eco-friendly farming methods that benefit both people and the planet.</p>
+            <a href="#" class="read-more">Read More →</a>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="contact-info">
+    <h2>📞 Get in Touch</h2>
+    <div class="contact-card">
+        <p>📍 <strong>Address:</strong> 123 Greenway Street, Mumbai, India</p>
+        <p>📞 <strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
+        <p>📧 <strong>Email:</strong> <a href="mailto:support@foodmart.com">support@foodmart.com</a></p>
+        <p>🌍 <strong>Website:</strong> <a href="#">www.foodmart.com</a></p>
+        <div class="social-links">
+            <p>📲 <strong>Follow Us:</strong></p>
+            <a href="#" class="social-btn fb">Facebook</a>
+            <a href="#" class="social-btn insta">Instagram</a>
+            <a href="#" class="social-btn twitter">Twitter</a>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <p>© 2025 Food Mart. All Rights Reserved.</p>
+  </div>
+
+</body>
+</html>
